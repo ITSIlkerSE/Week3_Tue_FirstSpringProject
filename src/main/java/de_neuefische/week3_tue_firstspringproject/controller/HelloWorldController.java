@@ -29,7 +29,7 @@ public class HelloWorldController {
 
     @GetMapping(path = "{name}")
     public String greetVisitor(){
-        return "Hello -  " + name;
+        return "Hello -  " + name + " length of name is : " + name.length();
 
     }
 
@@ -39,7 +39,7 @@ public class HelloWorldController {
     @PostMapping
     public String postName (@RequestBody String newName){
         name = newName;
-        return "New name is set to : " + name;
+        return "New name is set to : " + name + " length of name is : " + name.length();
 
     }
 
